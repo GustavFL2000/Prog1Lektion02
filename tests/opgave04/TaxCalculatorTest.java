@@ -1,4 +1,3 @@
-
 import opgave04.TaxCalculator;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -24,6 +23,6 @@ public class TaxCalculatorTest {
 
     @Test void HighTax() {
         int actual = TaxCalculator.calculateTax(60000);
-        assertEquals(264105, actual, "Du skal betale 15% skal af det beløb du tjener over 568.900 kr.");
+        assertEquals(271305, actual, "Du skal betale 37% af det skattepligtige beløb + 15% af det over topskattegrænsen.");
     }
 }
